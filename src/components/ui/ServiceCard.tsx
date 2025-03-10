@@ -15,6 +15,7 @@ export interface ServiceCardProps {
   roundedCorners?: string;
   padding?: string;
   titleBackground?: string;
+  imageStyle?: React.CSSProperties;
 
   // Layout options
   isHorizontal?: boolean;
@@ -48,6 +49,7 @@ const ServiceCard = ({
   learnMoreIconSize = 24,
   learnMoreIconBackground = colors.bgGreen,
   learnMoreTextColor,
+  imageStyle,
 }: ServiceCardProps) => {
   // Split title into words if needed
   const titleWords = titleSplit ? title.split(' ') : [title];
@@ -132,6 +134,7 @@ const ServiceCard = ({
               width={imageWidth}
               height={imageHeight}
               className="object-contain"
+              style={imageStyle}
             />
           </div>
         </div>
@@ -176,6 +179,7 @@ const ServiceCard = ({
                 width={imageWidth}
                 height={imageHeight}
                 className="object-contain"
+                style={imageStyle}
               />
             </div>
           </div>

@@ -46,10 +46,17 @@ const Services = () => {
     },
     {
       title: 'Email Marketing',
-      imageSrc: '/icons/email-icon.svg',
+      imageSrc: '/tokyo-sending-messages-from-one-place-to-another.svg',
       backgroundColor: colors.bgGray,
-      imageWidth: 200,
-      imageHeight: 150,
+      imageWidth: 210,
+      imageHeight: 192,
+      isHorizontal: true,
+      titleSplit: false,
+      titleBackground: colors.bgGreen,
+      learnMoreIcon: '/Icon.svg',
+      learnMoreIconSize: 41,
+      learnMoreIconBackground: colors.bgDark,
+      imageStyle: { transform: 'rotate(180deg)' }
     },
   ];
 
@@ -83,6 +90,7 @@ const Services = () => {
               learnMoreIconSize={service.learnMoreIconSize}
               learnMoreIconBackground={service.learnMoreIconBackground}
               learnMoreTextColor={service.learnMoreTextColor}
+              imageStyle={service.imageStyle}
             />
           ))}
         </div>
