@@ -1,0 +1,8 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M350 120C350 120 250 180 150 180H80C70 180 60 190 60 200V300C60 310 70 320 80 320H150C250 320 350 380 350 380V120Z" fill="#B9FF66" stroke="black" stroke-width="3"/>
+  <path d="M380 80C380 70 370 60 360 60C350 60 340 70 340 80V420C340 430 350 440 360 440C370 440 380 430 380 420V80Z" fill="white" stroke="black" stroke-width="3"/>
+  <ellipse cx="420" cy="100" rx="40" ry="80" transform="rotate(15 420 100)" fill="white" stroke="black" stroke-width="3"/>
+  <ellipse cx="420" cy="400" rx="40" ry="80" transform="rotate(-15 420 400)" fill="white" stroke="black" stroke-width="3"/>
+  <path d="M60 250H150" stroke="black" stroke-width="3"/>
+  <path d="M60 300C60 300 100 350 150 330M60 200C60 200 100 150 150 170" stroke="black" stroke-width="2" stroke-dasharray="5 5"/>
+</svg> 
