@@ -1,3 +1,4 @@
+import CallToAction from '@/components/sections/CallToAction';
 import Hero from '@/components/sections/Hero';
 import Partners from '@/components/sections/Partners';
 import Services from '@/components/sections/Services';
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Partners />
       <Services />
+      <CallToAction />
     </div>
   );
 }
