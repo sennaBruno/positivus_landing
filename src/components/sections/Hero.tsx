@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="w-full py-14 px-6 md:py-20 md:px-16 lg:px-20 bg-white">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="w-full lg:w-1/2">
-          <h1 className={`${typography.h1} ${colors.dark} ${colors.bgGreen} inline-block  py-2 rounded-lg mb-6`}>
+          <h1 className={`${typography.h1} ${colors.dark} inline-block  py-2 rounded-lg mb-6`}>
             Navigating the digital landscape for success
           </h1>
           <p className={`${typography.pLarge} ${colors.dark} mb-10 max-w-xl`}>

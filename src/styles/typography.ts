@@ -9,22 +9,22 @@ export const typography = {
   h2: 'font-sans font-medium text-[40px] leading-[100%] tracking-[0%]',
   h3: 'font-sans font-medium text-[30px] leading-[100%] tracking-[0%]',
   h4: 'font-sans font-medium text-[20px] leading-[100%] tracking-[0%]',
-  
   p: 'font-sans font-normal text-[18px] leading-[100%] tracking-[0%]',
   pLarge: 'font-sans font-normal text-[20px] leading-[28px] tracking-[0%]',
 };
 
 // Shorthand color classes
 export const colors = {
-  green: 'text-green',
-  dark: 'text-dark',
+  green: 'text-[#B9FF66]',
+  dark: 'text-[#191A23]',
   white: 'text-white',
   black: 'text-black',
   
-  bgGreen: 'bg-green',
-  bgDark: 'bg-dark',
+  bgGreen: 'bg-[#B9FF66]',
+  bgDark: 'bg-[#191A23]',
   bgWhite: 'bg-white',
   bgBlack: 'bg-black',
+  bgGray: 'bg-[#F3F3F3]',
 };
 
 export const combinedStyles = {

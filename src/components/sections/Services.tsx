@@ -6,7 +6,7 @@ const Services = () => {
     {
       title: 'Search engine optimization',
       imageSrc: '/Illustration (1).svg',
-      backgroundColor: colors.bgWhite,
+      backgroundColor: colors.bgGray,
       imageWidth: 221,
       imageHeight: 210,
       isHorizontal: true,
@@ -14,6 +14,7 @@ const Services = () => {
       learnMoreIcon: '/Icon.svg',
       learnMoreIconSize: 41,
       learnMoreIconBackground: colors.bgDark,
+      titleBackground: colors.bgGreen,
     },
     {
       title: 'Pay-per-click advertising',
@@ -46,7 +47,7 @@ const Services = () => {
     {
       title: 'Email Marketing',
       imageSrc: '/icons/email-icon.svg',
-      backgroundColor: 'bg-gray-100',
+      backgroundColor: colors.bgGray,
       imageWidth: 200,
       imageHeight: 150,
     },
@@ -57,7 +58,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         {/* Services Title */}
         <div className="flex flex-row align-center mb-24 gap-8">
-          <h2 className={`${typography.h2} px-4 py-2 bg-lime-300 rounded-lg`}>Services</h2>
+          <h2 className={`${typography.h2} px-4 py-2 ${colors.bgGreen} rounded-lg`}>Services</h2>
           <p className={`${typography.pLarge} max-w-3xl ${colors.dark} align-center`}>
             At our digital marketing agency, we offer a range of services to
             help businesses grow and succeed online. These services include:
