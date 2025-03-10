@@ -7,16 +7,16 @@ const Hero = () => {
     <section className="w-full py-14 px-6 md:py-20 md:px-16 lg:px-20 bg-white">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="w-full lg:w-1/2">
-          <h1 className={`${typography.h1} ${colors.dark} mb-6`}>
+          <h1 className={`${typography.h1} ${colors.dark} ${colors.bgGreen} inline-block  py-2 rounded-lg mb-6`}>
             Navigating the digital landscape for success
           </h1>
-          <p className={`${typography.p} mb-10 max-w-xl ${colors.dark}`}>
+          <p className={`${typography.pLarge} ${colors.dark} mb-10 max-w-xl`}>
             Our digital marketing agency helps businesses grow and succeed online through a range of
             services including SEO, PPC, social media marketing, and content creation.
           </p>
           <Link
             href="/consultation"
-            className={`inline-block px-8 py-4 ${colors.bgDark} ${colors.white} ${typography.h4} text-center rounded-md hover:bg-gray-800 transition-colors`}
+            className={`inline-block px-8 py-6 bg-black ${colors.white} ${typography.h4} text-center rounded-md hover:bg-gray-800 transition-colors`}
             tabIndex={0}
             aria-label="Book a consultation"
           >

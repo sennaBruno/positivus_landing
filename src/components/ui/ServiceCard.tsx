@@ -82,19 +82,19 @@ const ServiceCard = ({
                             {titleSplit ? (
                                 // Split title on two lines
                                 <>
-                                    <span className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
+                                    <h3 className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
                                         {firstHalf}
-                                    </span>
+                                    </h3>
                                     <br />
-                                    <span className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
+                                    <h3 className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
                                         {secondHalf}
-                                    </span>
+                                    </h3>
                                 </>
                             ) : (
                                 // Single line title
-                                <span className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
+                                <h3 className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
                                     {title}
-                                </span>
+                                </h3>
                             )}
                         </div>
 

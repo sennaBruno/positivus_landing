@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <Link
           href="/contact"
-          className={`hidden md:flex items-center justify-center w-[231px] h-[68px] px-[35px] py-[20px] gap-[10px] border border-black rounded-[14px] ${typography.h4} ${colors.dark} hover:bg-black hover:text-white transition-colors`}
+          className={`hidden md:flex items-center justify-center w-[231px] h-[70px] px-[30px] py-[20px] border border-black rounded-[14px] ${typography.h4} ${colors.dark} hover:bg-black hover:text-white transition-colors`}
           tabIndex={0}
           aria-label="Request a quote"
         >

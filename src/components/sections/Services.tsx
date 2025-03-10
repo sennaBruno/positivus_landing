@@ -6,42 +6,42 @@ const Services = () => {
     {
       title: 'Search engine optimization',
       imageSrc: '/Illustration (1).svg',
-      backgroundColor: 'bg-[#F3F3F3]',
+      backgroundColor: colors.bgWhite,
       imageWidth: 221,
       imageHeight: 210,
       isHorizontal: true,
       titleSplit: true,
       learnMoreIcon: '/Icon.svg',
       learnMoreIconSize: 41,
-      learnMoreIconBackground: 'bg-black',
+      learnMoreIconBackground: colors.bgDark,
     },
     {
       title: 'Pay-per-click advertising',
       imageSrc: '/Illustration (2).svg',
-      backgroundColor: 'bg-lime-300',
+      backgroundColor: colors.bgGreen,
       imageWidth: 221,
       imageHeight: 210,
       isHorizontal: true,
       titleSplit: true,
-      titleBackground: 'bg-white',
+      titleBackground: colors.bgWhite,
       learnMoreIcon: '/Icon.svg',
       learnMoreIconSize: 41,
-      learnMoreIconBackground: 'bg-black',
+      learnMoreIconBackground: colors.bgDark,
     },
     {
       title: 'Social Media Marketing',
       imageSrc: '/Illustration (3).svg',
-      backgroundColor: 'bg-[#191A23]',
-      textColor: 'text-black',
+      backgroundColor: colors.bgDark,
+      textColor: colors.black,
       imageWidth: 210,
       imageHeight: 210,
       isHorizontal: true,
       titleSplit: true,
-      titleBackground: 'bg-white',
-      learnMoreIconBackground: 'bg-white',
+      titleBackground: colors.bgWhite,
+      learnMoreIconBackground: colors.bgWhite,
       learnMoreIcon: '/Icon (1).svg',
       learnMoreIconSize: 41,
-      learnMoreTextColor: 'text-white',
+      learnMoreTextColor: colors.white,
     },
     {
       title: 'Email Marketing',
@@ -57,8 +57,8 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         {/* Services Title */}
         <div className="flex flex-row align-center mb-24 gap-8">
-          <h2 className={`${typography.h2} px-4 py-2 ${colors.bgGreen} rounded-lg`}>Services</h2>
-          <p className={`${typography.p} max-w-3xl`}>
+          <h2 className={`${typography.h2} px-4 py-2 bg-lime-300 rounded-lg`}>Services</h2>
+          <p className={`${typography.pLarge} max-w-3xl ${colors.dark} align-center`}>
             At our digital marketing agency, we offer a range of services to
             help businesses grow and succeed online. These services include:
           </p>

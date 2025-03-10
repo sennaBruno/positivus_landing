@@ -1,17 +1,17 @@
 /**
  * Typography utility classes based on Figma design
- * These classes use the Tailwind CSS configuration
+ * These classes use explicit sizing and styling rather than Tailwind classes
  */
 
 export const typography = {
-  // Headings
-  h1: 'font-medium text-heading-1 leading-tight tracking-none',
-  h2: 'font-medium text-heading-2 leading-tight tracking-none',
-  h3: 'font-medium text-heading-3 leading-tight tracking-none',
-  h4: 'font-medium text-heading-4 leading-tight tracking-none',
+  // Headings with explicit styling
+  h1: 'font-sans font-medium text-[60px] leading-[100%] tracking-[0%]',
+  h2: 'font-sans font-medium text-[40px] leading-[100%] tracking-[0%]',
+  h3: 'font-sans font-medium text-[30px] leading-[100%] tracking-[0%]',
+  h4: 'font-sans font-medium text-[20px] leading-[100%] tracking-[0%]',
   
-  // Body text
-  p: 'font-normal text-body leading-tight tracking-none',
+  p: 'font-sans font-normal text-[18px] leading-[100%] tracking-[0%]',
+  pLarge: 'font-sans font-normal text-[20px] leading-[28px] tracking-[0%]',
 };
 
 // Shorthand color classes
@@ -19,19 +19,18 @@ export const colors = {
   green: 'text-green',
   dark: 'text-dark',
   white: 'text-white',
+  black: 'text-black',
   
   bgGreen: 'bg-green',
   bgDark: 'bg-dark',
   bgWhite: 'bg-white',
+  bgBlack: 'bg-black',
 };
 
-// Examples of combined styles
 export const combinedStyles = {
   h1Green: `${typography.h1} ${colors.green}`,
   h1Dark: `${typography.h1} ${colors.dark}`,
   h1White: `${typography.h1} ${colors.white}`,
-  
-  // Add more combinations as needed
 };
 
 export default typography; 
