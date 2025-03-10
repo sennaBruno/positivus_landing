@@ -29,11 +29,18 @@ const Services = () => {
     },
     {
       title: 'Social Media Marketing',
-      imageSrc: '/icons/social-icon.svg',
-      backgroundColor: 'bg-gray-900',
-      textColor: 'text-white',
-      imageWidth: 200,
-      imageHeight: 150,
+      imageSrc: '/Illustration (3).svg',
+      backgroundColor: 'bg-[#191A23]',
+      textColor: 'text-black',
+      imageWidth: 210,
+      imageHeight: 210,
+      isHorizontal: true,
+      titleSplit: true,
+      titleBackground: 'bg-white',
+      learnMoreIconBackground: 'bg-white',
+      learnMoreIcon: '/Icon (1).svg',
+      learnMoreIconSize: 41,
+      learnMoreTextColor: 'text-white',
     },
     {
       title: 'Email Marketing',
@@ -73,6 +80,7 @@ const Services = () => {
               learnMoreIcon={service.learnMoreIcon}
               learnMoreIconSize={service.learnMoreIconSize}
               learnMoreIconBackground={service.learnMoreIconBackground}
+              learnMoreTextColor={service.learnMoreTextColor}
             />
           ))}
         </div>

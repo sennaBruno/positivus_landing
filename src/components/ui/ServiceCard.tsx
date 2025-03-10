@@ -29,6 +29,7 @@ export interface ServiceCardProps {
     learnMoreIcon?: string;
     learnMoreIconSize?: number;
     learnMoreIconBackground?: string;
+    learnMoreTextColor?: string;
 }
 
 const ServiceCard = ({
@@ -39,19 +40,13 @@ const ServiceCard = ({
     imageHeight = 150,
     backgroundColor = 'bg-gray-100',
     textColor = 'text-black',
-    customStyles = false,
-    roundedCorners = 'rounded-3xl',
-    padding = 'p-8',
     titleBackground = 'bg-lime-300',
     isHorizontal = false,
     titleSplit = false,
-    hasBorder = false,
-    borderColor = 'border-[#191A23]',
-    hasShadow = false,
-    shadowColor = 'shadow-[0px_5px_0px_0px_#191A23]',
     learnMoreIcon = '',
     learnMoreIconSize = 24,
     learnMoreIconBackground = 'bg-lime-300',
+    learnMoreTextColor,
 }: ServiceCardProps) => {
     // Split title into words if needed
     const titleWords = titleSplit ? title.split(' ') : [title];
@@ -72,14 +67,14 @@ const ServiceCard = ({
     relative 
     overflow-hidden 
     flex 
-    ${isHorizontal ? 'justify-between w-full h-full' : 'flex-col'}
+    ${isHorizontal ? 'justify-between w-full' : 'flex-col'}
   `;
 
     return (
         <div className={cardClass.trim()}>
             {isHorizontal ? (
                 // Horizontal layout (side by side)
-                <div className="flex justify-between w-full h-full">
+                <div className="flex justify-between w-full ">
                     {/* Left side with title and learn more */}
                     <div className="flex flex-col justify-between h-full">
                         <div>
@@ -90,7 +85,7 @@ const ServiceCard = ({
                                         {firstHalf}
                                     </span>
                                     <br />
-                                    <span className={`${titleBackground} ${textColor} text-[30px] font-medium leading-[100%] px-4 py-2 rounded-md inline-block mt-1`}>
+                                    <span className={`${titleBackground} ${textColor} text-[30px] font-medium leading-[100%] px-4 py-2 rounded-md inline-block`}>
                                         {secondHalf}
                                     </span>
                                 </>
@@ -124,7 +119,7 @@ const ServiceCard = ({
                                     </svg>
                                 )}
                             </div>
-                            <span className={textColor + " font-medium"}>Learn more</span>
+                            <span className={`${learnMoreTextColor || textColor} font-medium`}>Learn more</span>
                         </a>
                     </div>
 
@@ -171,7 +166,7 @@ const ServiceCard = ({
                                     </svg>
                                 )}
                             </div>
-                            <span>Learn more</span>
+                            <span className={`${learnMoreTextColor || textColor} font-medium`}>Learn more</span>
                         </a>
                         <div className="relative">
                             <Image
