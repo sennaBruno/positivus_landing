@@ -35,6 +35,10 @@ yarn-error.log*
 .env.local
 .cursorrules
 .cursorrules.md
+.settings.json
+
+# IDE settings
+.vscode/settings.json
 
 # vercel
 .vercel
