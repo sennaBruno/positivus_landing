@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full py-6 px-6 md:px-16 lg:px-20 bg-white">
+    <header className="w-full py-6 px-6 md:px-16 lg:px-20 bg-white font-['Space_Grotesk'] font-normal text-[20px] leading-[28px] tracking-[0%]">
       <nav className="flex items-center justify-between">
         <Link href="/" className="flex items-center" aria-label="Positivus Home" tabIndex={0}>
           <div className="flex items-center">
@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <Link
           href="/contact"
-          className="hidden md:block px-7 py-3 border border-black rounded-full text-base font-medium text-[#191A23] hover:bg-black hover:text-white transition-colors"
+          className="hidden md:flex items-center justify-center w-[231px] h-[68px] px-[35px] py-[20px] gap-[10px] border border-black rounded-[14px] text-base font-medium text-[#191A23] hover:bg-black hover:text-white transition-colors"
           tabIndex={0}
           aria-label="Request a quote"
         >
