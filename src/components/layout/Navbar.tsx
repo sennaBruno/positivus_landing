@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import { colors, typography } from '@/styles/typography';
 import Image from 'next/image';
-import React from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
   // We're using static navigation items to avoid any client/server mismatch
@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full py-6 px-6 md:px-16 lg:px-20 bg-white font-['Space_Grotesk'] font-normal text-[20px] leading-[28px] tracking-[0%]">
+    <header className="w-full py-6 px-6 md:px-16 lg:px-20 bg-white">
       <nav className="flex items-center justify-between">
         <Link href="/" className="flex items-center" aria-label="Positivus Home" tabIndex={0}>
           <div className="flex items-center">
@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link
               key={item.href}
               href={item.href}
-              className="text-base font-medium text-[#191A23] hover:text-gray-600 transition-colors"
+              className={`${typography.h4} ${colors.dark} hover:text-gray-600 transition-colors`}
               tabIndex={0}
               aria-label={item.label}
             >
@@ -37,14 +37,14 @@ const Navbar = () => {
 
         <Link
           href="/contact"
-          className="hidden md:flex items-center justify-center w-[231px] h-[68px] px-[35px] py-[20px] gap-[10px] border border-black rounded-[14px] text-base font-medium text-[#191A23] hover:bg-black hover:text-white transition-colors"
+          className={`hidden md:flex items-center justify-center w-[231px] h-[68px] px-[35px] py-[20px] gap-[10px] border border-black rounded-[14px] ${typography.h4} ${colors.dark} hover:bg-black hover:text-white transition-colors`}
           tabIndex={0}
           aria-label="Request a quote"
         >
           Request a quote
         </Link>
 
-        <button className="md:hidden text-[#191A23]" aria-label="Toggle mobile menu" tabIndex={0}>
+        <button className={`md:hidden ${colors.dark}`} aria-label="Toggle mobile menu" tabIndex={0}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

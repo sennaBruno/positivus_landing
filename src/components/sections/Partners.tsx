@@ -1,4 +1,4 @@
-import React from 'react';
+import { colors } from '@/styles/typography';
 import Image from 'next/image';
 
 const Partners = () => {
@@ -47,7 +47,7 @@ const Partners = () => {
         {logoImages.map(({ name, src, width, height }) => (
           <div
             key={name}
-            className="w-28 md:w-auto flex items-center justify-center text-[#191A23]"
+            className={`w-28 md:w-auto flex items-center justify-center ${colors.dark}`}
           >
             <Image
               src={src}

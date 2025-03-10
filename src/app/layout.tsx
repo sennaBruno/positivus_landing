@@ -1,7 +1,8 @@
+import Layout from '@/components/layout/Layout';
+import { colors } from '@/styles/typography';
 import type { Metadata } from 'next';
 import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
-import Layout from '@/components/layout/Layout';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -25,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`light ${spaceGrotesk.variable}`}>
-      <body className="font-sans antialiased bg-white text-[#191A23]" suppressHydrationWarning>
+      <body className={`font-sans antialiased bg-white ${colors.dark}`} suppressHydrationWarning>
         <Layout>{children}</Layout>
       </body>
     </html>

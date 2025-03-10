@@ -1,3 +1,4 @@
+import { colors, typography } from '@/styles/typography';
 import ServiceCard from '../ui/ServiceCard';
 
 const Services = () => {
@@ -56,8 +57,8 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         {/* Services Title */}
         <div className="flex flex-row align-center mb-24 gap-8">
-          <h2 className="text-3xl md:text-4xl font-bold px-4 py-2 bg-lime-300 rounded-lg">Services</h2>
-          <p className="text-lg max-w-3xl">
+          <h2 className={`${typography.h2} px-4 py-2 ${colors.bgGreen} rounded-lg`}>Services</h2>
+          <p className={`${typography.p} max-w-3xl`}>
             At our digital marketing agency, we offer a range of services to
             help businesses grow and succeed online. These services include:
           </p>

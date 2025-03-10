@@ -1,3 +1,4 @@
+import { colors, typography } from '@/styles/typography';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -6,16 +7,16 @@ const Hero = () => {
     <section className="w-full py-14 px-6 md:py-20 md:px-16 lg:px-20 bg-white">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="w-full lg:w-1/2">
-          <h1 className="font-space-grotesk text-[60px] leading-[100%] font-medium mb-6 text-[#191A23]">
+          <h1 className={`${typography.h1} ${colors.dark} mb-6`}>
             Navigating the digital landscape for success
           </h1>
-          <p className="font-space-grotesk text-[20px] font-normal leading-[28px] mb-10 max-w-xl text-[#191A23]">
+          <p className={`${typography.p} mb-10 max-w-xl ${colors.dark}`}>
             Our digital marketing agency helps businesses grow and succeed online through a range of
             services including SEO, PPC, social media marketing, and content creation.
           </p>
           <Link
             href="/consultation"
-            className="inline-block px-8 py-4 bg-[#191A23] text-white font-space-grotesk font-normal text-[20px] leading-[28px] text-center rounded-md hover:bg-gray-800 transition-colors"
+            className={`inline-block px-8 py-4 ${colors.bgDark} ${colors.white} ${typography.h4} text-center rounded-md hover:bg-gray-800 transition-colors`}
             tabIndex={0}
             aria-label="Book a consultation"
           >

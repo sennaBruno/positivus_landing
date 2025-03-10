@@ -1,3 +1,4 @@
+import { typography } from '@/styles/typography';
 import Image from 'next/image';
 
 export interface ServiceCardProps {
@@ -81,17 +82,17 @@ const ServiceCard = ({
                             {titleSplit ? (
                                 // Split title on two lines
                                 <>
-                                    <span className={`${titleBackground} ${textColor} text-[30px] font-medium leading-[100%] px-4 py-2 rounded-md inline-block`}>
+                                    <span className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
                                         {firstHalf}
                                     </span>
                                     <br />
-                                    <span className={`${titleBackground} ${textColor} text-[30px] font-medium leading-[100%] px-4 py-2 rounded-md inline-block`}>
+                                    <span className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
                                         {secondHalf}
                                     </span>
                                 </>
                             ) : (
                                 // Single line title
-                                <span className={`${titleBackground} ${textColor} text-[30px] font-medium leading-[100%] px-4 py-2 rounded-md inline-block`}>
+                                <span className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
                                     {title}
                                 </span>
                             )}
@@ -119,7 +120,7 @@ const ServiceCard = ({
                                     </svg>
                                 )}
                             </div>
-                            <span className={`${learnMoreTextColor || textColor} font-medium`}>Learn more</span>
+                            <span className={`${learnMoreTextColor || textColor} ${typography.h4}`}>Learn more</span>
                         </a>
                     </div>
 
@@ -139,7 +140,7 @@ const ServiceCard = ({
                 <>
                     <div className="mb-auto">
                         <div className={`inline-block px-4 py-2 ${titleBackground} ${textColor} rounded-lg mb-8`}>
-                            <h3 className="text-xl font-semibold">{title}</h3>
+                            <h3 className={`${typography.h3}`}>{title}</h3>
                         </div>
                     </div>
 
@@ -166,7 +167,7 @@ const ServiceCard = ({
                                     </svg>
                                 )}
                             </div>
-                            <span className={`${learnMoreTextColor || textColor} font-medium`}>Learn more</span>
+                            <span className={`${learnMoreTextColor || textColor} ${typography.h4}`}>Learn more</span>
                         </a>
                         <div className="relative">
                             <Image
