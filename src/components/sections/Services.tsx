@@ -22,10 +22,22 @@ const Services = () => {
     },
     {
       title: 'Pay-per-click advertising',
-      imageSrc: '/icons/ppc-icon.svg',
+      imageSrc: '/Illustration (2).svg',
       backgroundColor: 'bg-lime-300',
-      imageWidth: 200,
-      imageHeight: 150,
+      imageWidth: 221,
+      imageHeight: 210,
+      isHorizontal: true,
+      titleSplit: true,
+      hasBorder: true,
+      borderColor: 'border-[#191A23]',
+      hasShadow: true,
+      shadowColor: 'shadow-[0px_5px_0px_0px_#191A23]',
+      roundedCorners: 'rounded-[45px]',
+      padding: 'p-8',
+      titleBackground: 'bg-white',
+      learnMoreIcon: '/Icon.svg',
+      learnMoreIconSize: 41,
+      learnMoreIconBackground: 'bg-black',
     },
     {
       title: 'Social Media Marketing',
@@ -75,6 +87,7 @@ const Services = () => {
               shadowColor={service.shadowColor}
               roundedCorners={service.roundedCorners}
               padding={service.padding}
+              titleBackground={service.titleBackground}
               learnMoreIcon={service.learnMoreIcon}
               learnMoreIconSize={service.learnMoreIconSize}
               learnMoreIconBackground={service.learnMoreIconBackground}
