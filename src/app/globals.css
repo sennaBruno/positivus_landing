@@ -1,4 +1,7 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Target image parent containers to avoid Dark Reader modifications */
 .image-container {
@@ -7,9 +10,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #191A23;
-  --primary: #B9FF66;
-  --secondary: #191A23;
+  --foreground: #191a23;
+  --primary: #b9ff66;
+  --secondary: #191a23;
 }
 
 @theme inline {
@@ -33,11 +36,21 @@
 
 html.light {
   --background: #ffffff;
-  --foreground: #191A23;
+  --foreground: #191a23;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-white text-[#191A23];
+  }
 }

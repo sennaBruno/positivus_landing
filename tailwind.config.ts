@@ -7,6 +7,9 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['var(--font-space-grotesk)', 'system-ui', 'sans-serif'],
+    },
     extend: {
       colors: {
         primary: '#B9FF66',
@@ -19,4 +22,4 @@ const config: Config = {
   important: true,
 };
 
-export default config; 
+export default config;

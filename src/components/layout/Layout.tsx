@@ -10,9 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="min-h-screen flex flex-col bg-white">
       <div className="max-w-[1400px] mx-auto w-full">
         <Navbar />
-        <main className="flex-grow bg-white">
-          {children}
-        </main>
+        <main className="flex-grow bg-white">{children}</main>
       </div>
     </div>
   );

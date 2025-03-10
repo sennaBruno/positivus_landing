@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   // Adding this to help with hydration issues
   experimental: {
     // This improves hydration errors detection
-    strictNextHead: true
+    strictNextHead: true,
   },
 };
 
