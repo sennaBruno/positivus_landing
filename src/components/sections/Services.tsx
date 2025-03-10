@@ -10,12 +10,6 @@ const Services = () => {
       imageHeight: 210,
       isHorizontal: true,
       titleSplit: true,
-      hasBorder: true,
-      borderColor: 'border-[#191A23]',
-      hasShadow: true,
-      shadowColor: 'shadow-[0px_5px_0px_0px_#191A23]',
-      roundedCorners: 'rounded-[45px]',
-      padding: 'p-8',
       learnMoreIcon: '/Icon.svg',
       learnMoreIconSize: 41,
       learnMoreIconBackground: 'bg-black',
@@ -28,12 +22,6 @@ const Services = () => {
       imageHeight: 210,
       isHorizontal: true,
       titleSplit: true,
-      hasBorder: true,
-      borderColor: 'border-[#191A23]',
-      hasShadow: true,
-      shadowColor: 'shadow-[0px_5px_0px_0px_#191A23]',
-      roundedCorners: 'rounded-[45px]',
-      padding: 'p-8',
       titleBackground: 'bg-white',
       learnMoreIcon: '/Icon.svg',
       learnMoreIconSize: 41,
@@ -81,12 +69,6 @@ const Services = () => {
               imageHeight={service.imageHeight}
               isHorizontal={service.isHorizontal}
               titleSplit={service.titleSplit}
-              hasBorder={service.hasBorder}
-              borderColor={service.borderColor}
-              hasShadow={service.hasShadow}
-              shadowColor={service.shadowColor}
-              roundedCorners={service.roundedCorners}
-              padding={service.padding}
               titleBackground={service.titleBackground}
               learnMoreIcon={service.learnMoreIcon}
               learnMoreIconSize={service.learnMoreIconSize}

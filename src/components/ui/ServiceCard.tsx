@@ -58,14 +58,17 @@ const ServiceCard = ({
     const firstHalf = titleSplit ? titleWords.slice(0, Math.ceil(titleWords.length / 2)).join(' ') : title;
     const secondHalf = titleSplit ? titleWords.slice(Math.ceil(titleWords.length / 2)).join(' ') : '';
 
-    // Card container class
+    // Standard card styles that apply to all cards
     const cardClass = `
     ${backgroundColor} 
     ${textColor} 
-    ${roundedCorners} 
-    ${padding} 
-    ${hasBorder ? `border ${borderColor}` : ''} 
-    ${hasShadow ? shadowColor : ''} 
+    w-[600px] 
+    h-[310px] 
+    rounded-[45px] 
+    p-[50px] 
+    border 
+    border-[#191A23] 
+    shadow-[0px_5px_0px_0px_#191A23] 
     relative 
     overflow-hidden 
     flex 
