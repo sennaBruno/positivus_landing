@@ -73,6 +73,21 @@ const Services = () => {
       learnMoreIconBackground: colors.bgDark,
       learnMoreTextColor: colors.black
     },
+    {
+      title: 'Analytics and Tracking',
+      imageSrc: '/Illustration (5).svg',
+      backgroundColor: colors.bgDark,
+      imageWidth: 210,
+      imageHeight: 170,
+      isHorizontal: true,
+      titleSplit: true,
+      titleBackground: colors.bgGreen,
+      textColor: colors.dark,
+      learnMoreIcon: '/Icon (1).svg',
+      learnMoreIconSize: 41,
+      learnMoreIconBackground: colors.bgWhite,
+      learnMoreTextColor: colors.white
+    },
   ];
 
   return (
