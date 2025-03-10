@@ -23,17 +23,17 @@ const config: Config = {
         'heading-2': '40px',
         'heading-3': '30px',
         'heading-4': '20px',
-        'body': '18px',
+        body: '18px',
       },
       fontWeight: {
         normal: '400',
         medium: '500',
       },
       lineHeight: {
-        'tight': '100%',
+        tight: '100%',
       },
       letterSpacing: {
-        'none': '0%',
+        none: '0%',
       },
     },
   },

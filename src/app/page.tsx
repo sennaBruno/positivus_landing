@@ -1,4 +1,5 @@
 import CallToAction from '@/components/sections/CallToAction';
+import CaseStudies from '@/components/sections/CaseStudies';
 import Hero from '@/components/sections/Hero';
 import Partners from '@/components/sections/Partners';
 import Services from '@/components/sections/Services';
@@ -10,6 +11,7 @@ export default function Home() {
       <Partners />
       <Services />
       <CallToAction />
+      <CaseStudies />
     </div>
   );
 }

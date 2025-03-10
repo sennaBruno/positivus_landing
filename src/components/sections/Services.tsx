@@ -56,7 +56,7 @@ const Services = () => {
       learnMoreIcon: '/Icon.svg',
       learnMoreIconSize: 41,
       learnMoreIconBackground: colors.bgDark,
-      imageStyle: { transform: 'rotate(180deg)' }
+      imageStyle: { transform: 'rotate(180deg)' },
     },
     {
       title: 'Content Creation',
@@ -71,7 +71,7 @@ const Services = () => {
       learnMoreIcon: '/Icon.svg',
       learnMoreIconSize: 41,
       learnMoreIconBackground: colors.bgDark,
-      learnMoreTextColor: colors.black
+      learnMoreTextColor: colors.black,
     },
     {
       title: 'Analytics and Tracking',
@@ -86,24 +86,24 @@ const Services = () => {
       learnMoreIcon: '/Icon (1).svg',
       learnMoreIconSize: 41,
       learnMoreIconBackground: colors.bgWhite,
-      learnMoreTextColor: colors.white
+      learnMoreTextColor: colors.white,
     },
   ];
 
   return (
-    <section className="w-full py-16 px-6 md:px-16 lg:px-20 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full bg-white px-6 py-16 md:px-16 lg:px-20">
+      <div className="mx-auto max-w-7xl">
         {/* Services Title */}
-        <div className="flex flex-row align-center mb-24 gap-8">
+        <div className="align-center mb-24 flex flex-row gap-8">
           <h2 className={`${typography.h2} px-4 py-2 ${colors.bgGreen} rounded-lg`}>Services</h2>
           <p className={`${typography.pLarge} max-w-3xl ${colors.dark} align-center`}>
-            At our digital marketing agency, we offer a range of services to
-            help businesses grow and succeed online. These services include:
+            At our digital marketing agency, we offer a range of services to help businesses grow
+            and succeed online. These services include:
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {serviceCards.map((service, index) => (
             <ServiceCard
               key={index}
@@ -129,4 +129,4 @@ const Services = () => {
   );
 };
 
-export default Services; 
+export default Services;

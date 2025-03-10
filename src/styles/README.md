@@ -6,21 +6,21 @@ This document outlines the typography and color styles from the Figma design imp
 
 All typography follows these styles from the Figma design:
 
-| Element | Font Family | Weight | Size | Line Height | Letter Spacing |
-|---------|------------|--------|------|-------------|----------------|
-| H1      | Space Grotesk | 500 (Medium) | 60px | 100% | 0% |
-| H2      | Space Grotesk | 500 (Medium) | 40px | 100% | 0% |
-| H3      | Space Grotesk | 500 (Medium) | 30px | 100% | 0% |
-| H4      | Space Grotesk | 500 (Medium) | 20px | 100% | 0% |
-| P       | Space Grotesk | 400 (Regular) | 18px | 100% | 0% |
-| P Large | Space Grotesk | 400 (Regular) | 20px | 28px | 0% |
+| Element | Font Family   | Weight        | Size | Line Height | Letter Spacing |
+| ------- | ------------- | ------------- | ---- | ----------- | -------------- |
+| H1      | Space Grotesk | 500 (Medium)  | 60px | 100%        | 0%             |
+| H2      | Space Grotesk | 500 (Medium)  | 40px | 100%        | 0%             |
+| H3      | Space Grotesk | 500 (Medium)  | 30px | 100%        | 0%             |
+| H4      | Space Grotesk | 500 (Medium)  | 20px | 100%        | 0%             |
+| P       | Space Grotesk | 400 (Regular) | 18px | 100%        | 0%             |
+| P Large | Space Grotesk | 400 (Regular) | 20px | 28px        | 0%             |
 
 ## Color Palette
 
-| Color Name | Hex Value | Description |
-|------------|-----------|-------------|
-| Green      | #B9FF66   | Primary brand color |
-| Dark       | #191A23   | Dark text and backgrounds |
+| Color Name | Hex Value | Description                |
+| ---------- | --------- | -------------------------- |
+| Green      | #B9FF66   | Primary brand color        |
+| Dark       | #191A23   | Dark text and backgrounds  |
 | White      | #F3F3F3   | Light text and backgrounds |
 | Black      | #000000   | Black text and UI elements |
 
@@ -74,4 +74,4 @@ export const typography = {
 
 ## Example Component
 
-Check out the `TypographyExample.tsx` component in the examples folder to see the implementation in action. 
+Check out the `TypographyExample.tsx` component in the examples folder to see the implementation in action.

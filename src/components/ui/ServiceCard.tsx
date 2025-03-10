@@ -53,7 +53,9 @@ const ServiceCard = ({
 }: ServiceCardProps) => {
   // Split title into words if needed
   const titleWords = titleSplit ? title.split(' ') : [title];
-  const firstHalf = titleSplit ? titleWords.slice(0, Math.ceil(titleWords.length / 2)).join(' ') : title;
+  const firstHalf = titleSplit
+    ? titleWords.slice(0, Math.ceil(titleWords.length / 2)).join(' ')
+    : title;
   const secondHalf = titleSplit ? titleWords.slice(Math.ceil(titleWords.length / 2)).join(' ') : '';
 
   // Standard card styles that apply to all cards
@@ -77,24 +79,30 @@ const ServiceCard = ({
     <div className={cardClass.trim()}>
       {isHorizontal ? (
         // Horizontal layout (side by side)
-        <div className="flex justify-between w-full ">
+        <div className="flex w-full justify-between">
           {/* Left side with title and learn more */}
-          <div className="flex flex-col justify-between h-full">
+          <div className="flex h-full flex-col justify-between">
             <div>
               {titleSplit ? (
                 // Split title on two lines
                 <>
-                  <h3 className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
+                  <h3
+                    className={`${titleBackground} ${textColor} ${typography.h3} inline-block rounded-md px-4 py-2`}
+                  >
                     {firstHalf}
                   </h3>
                   <br />
-                  <h3 className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
+                  <h3
+                    className={`${titleBackground} ${textColor} ${typography.h3} inline-block rounded-md px-4 py-2`}
+                  >
                     {secondHalf}
                   </h3>
                 </>
               ) : (
                 // Single line title
-                <h3 className={`${titleBackground} ${textColor} ${typography.h3} px-4 py-2 rounded-md inline-block`}>
+                <h3
+                  className={`${titleBackground} ${textColor} ${typography.h3} inline-block rounded-md px-4 py-2`}
+                >
                   {title}
                 </h3>
               )}
@@ -106,7 +114,9 @@ const ServiceCard = ({
               tabIndex={0}
               aria-label={`Learn more about ${title}`}
             >
-              <div className={`flex items-center justify-center w-10 h-10 rounded-full ${learnMoreIconBackground}`}>
+              <div
+                className={`flex h-10 w-10 items-center justify-center rounded-full ${learnMoreIconBackground}`}
+              >
                 {learnMoreIcon ? (
                   <Image
                     src={learnMoreIcon}
@@ -116,13 +126,33 @@ const ServiceCard = ({
                     className="object-contain"
                   />
                 ) : (
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 1L15 8L8 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M15 8H1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 1L15 8L8 15"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 8H1"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 )}
               </div>
-              <span className={`${learnMoreTextColor || textColor} ${typography.h4}`}>Learn more</span>
+              <span className={`${learnMoreTextColor || textColor} ${typography.h4}`}>
+                Learn more
+              </span>
             </a>
           </div>
 
@@ -142,19 +172,23 @@ const ServiceCard = ({
         // Vertical layout (standard card)
         <>
           <div className="mb-auto">
-            <div className={`inline-block px-4 py-2 ${titleBackground} ${textColor} rounded-lg mb-8`}>
+            <div
+              className={`inline-block px-4 py-2 ${titleBackground} ${textColor} mb-8 rounded-lg`}
+            >
               <h3 className={`${typography.h3}`}>{title}</h3>
             </div>
           </div>
 
-          <div className="flex justify-between items-end">
+          <div className="flex items-end justify-between">
             <a
               href="#"
               className="flex items-center gap-2 hover:underline"
               tabIndex={0}
               aria-label={`Learn more about ${title}`}
             >
-              <div className={`flex items-center justify-center w-8 h-8 rounded-full ${learnMoreIconBackground}`}>
+              <div
+                className={`flex h-8 w-8 items-center justify-center rounded-full ${learnMoreIconBackground}`}
+              >
                 {learnMoreIcon ? (
                   <Image
                     src={learnMoreIcon}
@@ -164,13 +198,33 @@ const ServiceCard = ({
                     className="object-contain"
                   />
                 ) : (
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 1L15 8L8 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M15 8H1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 1L15 8L8 15"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 8H1"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 )}
               </div>
-              <span className={`${learnMoreTextColor || textColor} ${typography.h4}`}>Learn more</span>
+              <span className={`${learnMoreTextColor || textColor} ${typography.h4}`}>
+                Learn more
+              </span>
             </a>
             <div className="relative">
               <Image
@@ -189,4 +243,4 @@ const ServiceCard = ({
   );
 };
 
-export default ServiceCard; 
+export default ServiceCard;

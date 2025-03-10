@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full py-6 px-6 md:px-16 lg:px-20 bg-white">
+    <header className="w-full bg-white px-6 py-6 md:px-16 lg:px-20">
       <nav className="flex items-center justify-between">
         <Link href="/" className="flex items-center" aria-label="Positivus Home" tabIndex={0}>
           <div className="flex items-center">
@@ -21,12 +21,12 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className="hidden md:flex items-center gap-8 lg:gap-12">
+        <div className="hidden items-center gap-8 md:flex lg:gap-12">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`${typography.h4} ${colors.dark} hover:text-gray-600 transition-colors`}
+              className={`${typography.h4} ${colors.dark} transition-colors hover:text-gray-600`}
               tabIndex={0}
               aria-label={item.label}
             >
@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <Link
           href="/contact"
-          className={`hidden md:flex items-center justify-center w-[231px] h-[70px] px-[30px] py-[20px] border border-black rounded-[14px] ${typography.h4} ${colors.dark} hover:bg-black hover:text-white transition-colors`}
+          className={`hidden h-[70px] w-[231px] items-center justify-center rounded-[14px] border border-black px-[30px] py-[20px] md:flex ${typography.h4} ${colors.dark} transition-colors hover:bg-black hover:text-white`}
           tabIndex={0}
           aria-label="Request a quote"
         >

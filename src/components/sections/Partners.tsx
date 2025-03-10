@@ -42,19 +42,19 @@ const Partners = () => {
   ];
 
   return (
-    <section className="w-full pb-16 pt-8 px-6 md:px-16 lg:px-20 bg-white">
-      <div className="flex flex-wrap items-center justify-center md:justify-between gap-8 lg:gap-10">
+    <section className="w-full bg-white px-6 pt-8 pb-16 md:px-16 lg:px-20">
+      <div className="flex flex-wrap items-center justify-center gap-8 md:justify-between lg:gap-10">
         {logoImages.map(({ name, src, width, height }) => (
           <div
             key={name}
-            className={`w-28 md:w-auto flex items-center justify-center ${colors.dark}`}
+            className={`flex w-28 items-center justify-center md:w-auto ${colors.dark}`}
           >
             <Image
               src={src}
               alt={`${name} logo`}
               width={width}
               height={height}
-              className="opacity-60 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-300"
+              className="opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
             />
           </div>
         ))}

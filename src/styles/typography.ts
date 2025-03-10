@@ -19,7 +19,7 @@ export const colors = {
   dark: 'text-[#191A23]',
   white: 'text-white',
   black: 'text-black',
-  
+
   bgGreen: 'bg-[#B9FF66]',
   bgDark: 'bg-[#191A23]',
   bgWhite: 'bg-white',
@@ -33,4 +33,4 @@ export const combinedStyles = {
   h1White: `${typography.h1} ${colors.white}`,
 };
 
-export default typography; 
+export default typography;

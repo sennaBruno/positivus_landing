@@ -10,10 +10,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full py-14 px-6 md:py-20 md:px-16 lg:px-20 bg-white">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+    <section className="w-full bg-white px-6 py-14 md:px-16 md:py-20 lg:px-20">
+      <div className="flex flex-col items-center justify-between gap-12 lg:flex-row">
         <div className="w-full lg:w-1/2">
-          <h1 className={`${typography.h1} ${colors.dark} inline-block  py-2 rounded-lg mb-6`}>
+          <h1 className={`${typography.h1} ${colors.dark} mb-6 inline-block rounded-lg py-2`}>
             Navigating the digital landscape for success
           </h1>
           <p className={`${typography.pLarge} ${colors.dark} mb-10 max-w-xl`}>
@@ -32,8 +32,8 @@ const Hero = () => {
           </Button>
         </div>
 
-        <div className="w-full lg:w-1/2 relative flex justify-center">
-          <div className="relative w-full max-w-[600px] h-[515px] flex items-center justify-center">
+        <div className="relative flex w-full justify-center lg:w-1/2">
+          <div className="relative flex h-[515px] w-full max-w-[600px] items-center justify-center">
             {/* Decorative stars */}
             <div className="absolute top-0 right-1/4 z-10">
               <svg
@@ -66,7 +66,7 @@ const Hero = () => {
             </div>
 
             {/* Main illustration */}
-            <div className="w-[600px] h-[515px] relative z-10">
+            <div className="relative z-10 h-[515px] w-[600px]">
               <Image
                 src="/logos/Illustration.svg"
                 alt="Digital marketing landscape illustration"
