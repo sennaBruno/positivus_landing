@@ -13,24 +13,21 @@ const Navbar = () => {
   ];
   
   return (
-    <header className="w-full py-5 px-6 md:px-16 lg:px-20 bg-white">
+    <header className="w-full py-6 px-6 md:px-16 lg:px-20 bg-white">
       <nav className="flex items-center justify-between">
         <Link href="/" className="flex items-center" aria-label="Positivus Home" tabIndex={0}>
           <div className="flex items-center">
             <div className="image-container">
-              <Image 
-                src="/logo.svg" 
-                alt="Positivus logo" 
-                width={36} 
-                height={36} 
-                priority
-              />
+              <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="black"/>
+                <path d="M14 16L34 32M34 16L14 32" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+              </svg>
             </div>
-            <span className="ml-2 text-2xl font-bold text-[#191A23]">Positivus</span>
+            <span className="ml-3 text-2xl font-bold text-[#191A23]">Positivus</span>
           </div>
         </Link>
 
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-8 lg:gap-12">
           {navItems.map((item) => (
             <Link 
               key={item.href}
@@ -46,7 +43,7 @@ const Navbar = () => {
 
         <Link 
           href="/contact" 
-          className="hidden md:block px-6 py-3 border border-black rounded-full text-base font-medium text-[#191A23] hover:bg-black hover:text-white transition-colors"
+          className="hidden md:block px-7 py-3 border border-black rounded-full text-base font-medium text-[#191A23] hover:bg-black hover:text-white transition-colors"
           tabIndex={0}
           aria-label="Request a quote"
         >
