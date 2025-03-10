@@ -58,6 +58,21 @@ const Services = () => {
       learnMoreIconBackground: colors.bgDark,
       imageStyle: { transform: 'rotate(180deg)' }
     },
+    {
+      title: 'Content Creation',
+      imageSrc: '/Illustration (4).svg',
+      backgroundColor: colors.bgGreen,
+      imageWidth: 210,
+      imageHeight: 195,
+      isHorizontal: true,
+      titleSplit: true,
+      titleBackground: colors.bgWhite,
+      textColor: colors.dark,
+      learnMoreIcon: '/Icon.svg',
+      learnMoreIconSize: 41,
+      learnMoreIconBackground: colors.bgDark,
+      learnMoreTextColor: colors.black
+    },
   ];
 
   return (
@@ -73,7 +88,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {serviceCards.map((service, index) => (
             <ServiceCard
               key={index}
