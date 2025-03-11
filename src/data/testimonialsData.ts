@@ -9,37 +9,37 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "John Smith",
+    name: "Robert Chen",
     position: "Marketing Director",
-    company: "XYZ Corp",
-    content: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+    company: "Innovate Tech",
+    content: "Partnering with Positivus transformed our digital presence completely. Within six months, our website traffic increased by 150% and conversion rates doubled. Their strategic approach to SEO and content marketing has positioned us as industry leaders. Truly exceptional work!"
   },
   {
     id: 2,
-    name: "John Smith",
-    position: "Marketing Director",
-    company: "XYZ Corp",
-    content: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+    name: "Sophia Martinez",
+    position: "E-commerce Head",
+    company: "Bloom Retail",
+    content: "The Positivus team revolutionized our online store's performance. Their data-driven PPC campaigns and site optimization reduced our customer acquisition costs by 40% while increasing average order values. They're responsive, transparent, and deliver measurable results."
   },
   {
     id: 3,
-    name: "Sarah Johnson",
+    name: "James Wilson",
     position: "CEO",
-    company: "ABC Inc",
-    content: "Working with Positivus has transformed our digital marketing strategy. They helped us achieve record-breaking results in terms of online engagement and conversion rates. Their team is knowledgeable, creative, and always available when we need them."
+    company: "Quantum Solutions",
+    content: "As a startup founder, working with Positivus was the best decision we made. Their comprehensive digital strategy helped us establish market presence and attract investors. They understand modern business challenges and create tailored solutions that drive real growth."
   },
   {
     id: 4,
-    name: "Michael Brown",
-    position: "E-commerce Manager",
-    company: "123 Store",
-    content: "Our e-commerce sales have increased by 200% since we started working with Positivus. Their SEO and PPC strategies have been game-changers for our business. The team is data-driven and consistently delivers exceptional results."
+    name: "Olivia Thompson",
+    position: "Brand Director",
+    company: "EcoLife Essentials",
+    content: "Positivus helped us articulate our sustainable brand story across digital channels perfectly. Their social media campaigns increased our engagement by 300% and built a community of passionate customers. They truly understand how to build authentic brand connections."
   },
   {
     id: 5,
-    name: "Emily Davis",
-    position: "Marketing Manager",
-    company: "Tech Solutions",
-    content: "Positivus has exceeded our expectations in every way. Their comprehensive approach to digital marketing has helped us reach new audiences and establish a strong online presence. The team is proactive, innovative, and truly invested in our success."
+    name: "Daniel Nakamura",
+    position: "Operations Manager",
+    company: "Global Connect",
+    content: "Our international expansion was seamlessly supported by Positivus's multilingual SEO and localized marketing strategies. They helped us navigate different markets with culturally relevant campaigns that resonated with diverse audiences. Their expertise is invaluable."
   }
 ]; 
