@@ -3,6 +3,7 @@
 import { testimonials } from '@/data/testimonialsData';
 import { colors } from '@/styles/typography';
 import { useState } from 'react';
+import CarouselControls from '../ui/CarouselControls';
 import SectionTitle from '../ui/SectionTitle';
 import TestimonialCard from '../ui/TestimonialCard';
 
@@ -66,45 +67,13 @@ const Testimonials = () => {
           </div>
 
           {/* Controls */}
-          <div className="flex justify-center items-center mt-14 gap-8 md:gap-20">
-            {/* Previous Button */}
-            <button
-              onClick={handlePrevSlide}
-              aria-label="Previous testimonial"
-              className="text-white hover:text-[#C6F52E] transition-colors z-30"
-              tabIndex={0}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-              </svg>
-            </button>
-
-            {/* Dots */}
-            <div className="flex space-x-4 z-30">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleDotClick(index)}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                  className={`w-2 h-2 rounded-full transition-colors ${index === activeSlide ? 'bg-[#C6F52E]' : 'bg-white'
-                    }`}
-                  tabIndex={0}
-                />
-              ))}
-            </div>
-
-            {/* Next Button */}
-            <button
-              onClick={handleNextSlide}
-              aria-label="Next testimonial"
-              className="text-white hover:text-[#C6F52E] transition-colors z-30"
-              tabIndex={0}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </button>
-          </div>
+          <CarouselControls
+            activeSlide={activeSlide}
+            totalSlides={testimonials.length}
+            onPrevClick={handlePrevSlide}
+            onNextClick={handleNextSlide}
+            onDotClick={handleDotClick}
+          />
         </div>
       </div>
     </section>
