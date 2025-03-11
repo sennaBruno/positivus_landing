@@ -21,8 +21,12 @@ const Testimonials = () => {
     setActiveSlide(index);
   };
 
+  // Calculate previous and next indices
+  const prevIndex = activeSlide === 0 ? testimonials.length - 1 : activeSlide - 1;
+  const nextIndex = (activeSlide + 1) % testimonials.length;
+
   return (
-    <section className={`w-full ${colors.bgWhite} px-6 py-16 md:px-16 lg:px-20`}>
+    <section className={`w-full ${colors.bgWhite} px-6 py-16 md:px-16 lg:px-20 overflow-hidden`}>
       <div className="mx-auto max-w-7xl">
         {/* Title Section */}
         <SectionTitle
@@ -32,27 +36,42 @@ const Testimonials = () => {
         />
 
         {/* Testimonials Carousel */}
-        <div className={`w-full ${colors.bgDark} rounded-3xl p-6 md:p-12 relative`}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
-            {/* Show two testimonials side by side on medium+ screens */}
-            <TestimonialCard
-              testimonial={testimonials[activeSlide]}
-              className="h-full"
-            />
+        <div className={`w-full ${colors.bgDark} rounded-3xl py-6 relative min-h-[600px] `}>
+          {/* Carousel Container */}
+          <div className="relative h-full overflow-hidden">
+            {/* Previous Card (visible on larger screens) */}
+            <div className="absolute left-0 transform -translate-x-3/4  w-1/2 top-0 bottom-0 hidden md:block z-10">
+              <TestimonialCard
+                testimonial={testimonials[prevIndex]}
+                className="h-full"
+              />
+            </div>
 
-            <TestimonialCard
-              testimonial={testimonials[(activeSlide + 1) % testimonials.length]}
-              className="h-full md:block hidden"
-            />
+            {/* Active Card */}
+            <div className="relative mx-auto w-full md:w-2/3 z-20">
+              <TestimonialCard
+                testimonial={testimonials[activeSlide]}
+                className="h-full"
+                active={true}
+              />
+            </div>
+
+            {/* Next Card (visible on larger screens) */}
+            <div className="absolute right-0 transform translate-x-3/4  w-1/2 top-0 bottom-0 hidden md:block z-10">
+              <TestimonialCard
+                testimonial={testimonials[nextIndex]}
+                className="h-full"
+              />
+            </div>
           </div>
 
           {/* Controls */}
-          <div className="flex justify-between items-center mt-12">
+          <div className="flex justify-center items-center mt-12 gap-24">
             {/* Previous Button */}
             <button
               onClick={handlePrevSlide}
               aria-label="Previous testimonial"
-              className="text-white hover:text-[#C6F52E] transition-colors"
+              className="text-white hover:text-[#C6F52E] transition-colors z-30"
               tabIndex={0}
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -61,7 +80,7 @@ const Testimonials = () => {
             </button>
 
             {/* Dots */}
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 z-30">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
@@ -78,7 +97,7 @@ const Testimonials = () => {
             <button
               onClick={handleNextSlide}
               aria-label="Next testimonial"
-              className="text-white hover:text-[#C6F52E] transition-colors"
+              className="text-white hover:text-[#C6F52E] transition-colors z-30"
               tabIndex={0}
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
