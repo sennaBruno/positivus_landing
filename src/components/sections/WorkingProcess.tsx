@@ -1,8 +1,9 @@
 'use client';
 
-import { colors, typography } from '@/styles/typography';
+import { colors } from '@/styles/typography';
 import { useState } from 'react';
 import ProcessAccordionItem from '../ui/ProcessAccordionItem';
+import SectionTitle from '../ui/SectionTitle';
 
 interface ProcessStep {
 	id: string;
@@ -64,14 +65,11 @@ const WorkingProcess = () => {
 		<section className={`w-full ${colors.bgWhite} px-6 py-16 md:px-16 lg:px-20`}>
 			<div className="mx-auto max-w-7xl">
 				{/* Title Section */}
-				<div className="mb-10 flex flex-col md:flex-row md:items-center gap-8">
-					<div className={`inline-block rounded-xl ${colors.bgGreen} px-6 py-4`}>
-						<h2 className={`${typography.h2} font-medium ${colors.dark}`}>Our Working Process</h2>
-					</div>
-					<p className={`${typography.pLarge} max-w-3xl ${colors.dark} mt-4 md:mt-0`}>
-						Step-by-Step Guide to Achieving Your Business Goals
-					</p>
-				</div>
+				<SectionTitle
+					title="Our Working Process"
+					description="Step-by-Step Guide to Achieving Your Business Goals"
+					className="mb-10"
+				/>
 
 				{/* Process Steps */}
 				<div className="mt-10 space-y-6">

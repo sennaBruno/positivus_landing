@@ -1,7 +1,8 @@
 'use client';
 
-import { colors, typography } from '@/styles/typography';
+import { typography } from '@/styles/typography';
 import Image from 'next/image';
+import SectionTitle from '../ui/SectionTitle';
 
 type CaseStudyProps = {
   title: string;
@@ -36,18 +37,14 @@ const CaseStudies = () => {
   };
 
   return (
-    <section className="w-full bg-white px-6 pt-4 pb-16 md:px-16 lg:px-20">
+    <section className="w-full bg-white px-6 py-16 md:px-16 lg:px-20">
       <div className="mx-auto max-w-7xl">
         {/* Title Section */}
-        <div className="mb-16 flex flex-col items-start gap-6 md:flex-row md:items-center">
-          <div className="rounded-xl bg-[#B9FF66] px-6 py-4">
-            <h2 className={`${typography.h2} font-medium`}>Case Studies</h2>
-          </div>
-          <p className={`${typography.pLarge} max-w-3xl ${colors.dark}`}>
-            Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case
-            Studies
-          </p>
-        </div>
+        <SectionTitle
+          title="Case Studies"
+          description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+          className="mb-16"
+        />
 
         {/* Case Studies Grid */}
         <div className="rounded-[45px] bg-[#191A23] p-8 md:p-16">

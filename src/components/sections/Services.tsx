@@ -1,4 +1,5 @@
-import { colors, typography } from '@/styles/typography';
+import { colors } from '@/styles/typography';
+import SectionTitle from '../ui/SectionTitle';
 import ServiceCard from '../ui/ServiceCard';
 
 const Services = () => {
@@ -94,13 +95,11 @@ const Services = () => {
     <section className="w-full bg-white px-6 py-16 md:px-16 lg:px-20">
       <div className="mx-auto max-w-7xl">
         {/* Services Title */}
-        <div className="align-center mb-24 flex flex-row gap-8">
-          <h2 className={`${typography.h2} px-4 py-2 ${colors.bgGreen} rounded-lg`}>Services</h2>
-          <p className={`${typography.pLarge} max-w-3xl ${colors.dark} align-center`}>
-            At our digital marketing agency, we offer a range of services to help businesses grow
-            and succeed online. These services include:
-          </p>
-        </div>
+        <SectionTitle
+          title="Services"
+          description="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
+          className="mb-24"
+        />
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
