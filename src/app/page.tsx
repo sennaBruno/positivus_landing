@@ -4,6 +4,7 @@ import Hero from '@/components/sections/Hero';
 import Partners from '@/components/sections/Partners';
 import Services from '@/components/sections/Services';
 import Team from '@/components/sections/Team';
+import Testimonials from '@/components/sections/Testimonials';
 import WorkingProcess from '@/components/sections/WorkingProcess';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <CaseStudies />
       <WorkingProcess />
       <Team />
+      <Testimonials />
     </div>
   );
 }
