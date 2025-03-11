@@ -30,7 +30,7 @@ This is a modern, responsive landing page for Positivus Digital Marketing Agency
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/positivus-landing.git
+git clone https://github.com/Bruno/positivus-landing.git
 cd positivus-landing
 ```
 
