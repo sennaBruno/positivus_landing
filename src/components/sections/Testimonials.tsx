@@ -36,19 +36,19 @@ const Testimonials = () => {
         />
 
         {/* Testimonials Carousel */}
-        <div className={`w-full ${colors.bgDark} rounded-3xl py-6 relative min-h-[600px] `}>
+        <div className={`w-full ${colors.bgDark} rounded-3xl py-14 relative min-h-[480px]`}>
           {/* Carousel Container */}
-          <div className="relative h-full overflow-hidden">
+          <div className="relative h-full overflow-hidden flex justify-center items-center px-4">
             {/* Previous Card (visible on larger screens) */}
-            <div className="absolute left-0 transform -translate-x-3/4  w-1/2 top-0 bottom-0 hidden md:block z-10">
+            <div className="absolute -left-16 transform -translate-x-4/6  top-0 hidden md:block z-10">
               <TestimonialCard
                 testimonial={testimonials[prevIndex]}
-                className="h-full"
+                className="h-full "
               />
             </div>
 
             {/* Active Card */}
-            <div className="relative mx-auto w-full md:w-2/3 z-20">
+            <div className="relative w-full md:w-[60%] max-w-2xl z-20 px-4">
               <TestimonialCard
                 testimonial={testimonials[activeSlide]}
                 className="h-full"
@@ -57,16 +57,16 @@ const Testimonials = () => {
             </div>
 
             {/* Next Card (visible on larger screens) */}
-            <div className="absolute right-0 transform translate-x-3/4  w-1/2 top-0 bottom-0 hidden md:block z-10">
+            <div className="absolute -right-16 transform translate-x-4/6  top-0 hidden md:block z-10">
               <TestimonialCard
                 testimonial={testimonials[nextIndex]}
-                className="h-full"
+                className="h-full "
               />
             </div>
           </div>
 
           {/* Controls */}
-          <div className="flex justify-center items-center mt-12 gap-24">
+          <div className="flex justify-center items-center mt-14 gap-8 md:gap-20">
             {/* Previous Button */}
             <button
               onClick={handlePrevSlide}
@@ -80,7 +80,7 @@ const Testimonials = () => {
             </button>
 
             {/* Dots */}
-            <div className="flex space-x-2 z-30">
+            <div className="flex space-x-4 z-30">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
