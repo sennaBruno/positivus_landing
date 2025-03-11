@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import Navbar from './Navbar';
 
 type LayoutProps = {
@@ -11,6 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div className="mx-auto w-full max-w-[1400px]">
         <Navbar />
         <main className="flex-grow bg-white">{children}</main>
+        <Footer />
       </div>
     </div>
   );
