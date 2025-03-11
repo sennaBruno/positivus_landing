@@ -14,7 +14,7 @@ export const teamMembers: TeamMember[] = [
     position: 'CEO and Founder',
     experience: '10+ years of experience in digital marketing.',
     skills: 'Expertise in SEO, PPC, and content strategy',
-    image: '/images/team/placeholder.svg',
+    image: '/images/team/Picture John Smith.svg',
   },
   {
     id: '2',
