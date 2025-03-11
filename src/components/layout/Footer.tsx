@@ -24,7 +24,7 @@ const Footer = () => {
 
 
   return (
-    <footer className={`${colors.bgDark} mx-auto w-full max-w-7xl px-6 py-16 md:px-16 lg:px-20 overflow-hidden`}>
+    <footer className={`${colors.bgDark} mx-auto w-full max-w-7xl px-6 py-16 md:px-16 lg:px-20 overflow-hidden rounded-t-[45px] mt-16`}>
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           {/* Logo */}
@@ -56,21 +56,18 @@ const Footer = () => {
               aria-label="LinkedIn"
               tabIndex={0}
             >
-              <Image src="/logos/Social icon in.svg" alt="LinkedIn" width={24} height={24} />
+              <Image src="/logos/social_icon_linkedin.svg" alt="LinkedIn" width={24} height={24} />
             </Link>
-
-            <Link
+            {/* The SVG are not working, so I'm commenting them out */}
+            {/* <Link
               href="https://facebook.com"
               target="_blank"
               className="flex h-6 w-6 items-center justify-center rounded-full bg-white"
               aria-label="Facebook"
               tabIndex={0}
             >
-              <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.5 8.25V5.25C7.5 4.422 8.172 3.75 9 3.75H10.5V0H7.5C5.0145 0 3 2.0145 3 4.5V8.25H0V12H3V24H7.5V12H10.5L12 8.25H7.5Z" fill="#191A23" />
-              </svg>
-            </Link>
-
+              <Image src="logos/social_icon_facebook.svg" alt="LinkedIn" width={24} height={24} />
+            </Link> */}
             <Link
               href="https://twitter.com"
               target="_blank"
@@ -78,9 +75,7 @@ const Footer = () => {
               aria-label="Twitter"
               tabIndex={0}
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01z" fill="#191A23" />
-              </svg>
+              <Image src="/logos/social_icon_twitter.svg" alt="LinkedIn" width={24} height={24} />
             </Link>
           </div>
         </div>
@@ -89,7 +84,7 @@ const Footer = () => {
         <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Contact Information */}
           <div className="flex flex-col gap-4">
-            <div className="mb-2 inline-block rounded-full bg-[#B9FF66] px-4 py-1">
+            <div className="mb-2 inline-block rounded-full bg-[#B9FF66] px-4 py-1 w-fit">
               <span className={`${typography.p} font-medium text-black`}>Contact us:</span>
             </div>
 
@@ -103,14 +98,14 @@ const Footer = () => {
 
           {/* Newsletter Form */}
           <div className="flex flex-col items-end">
-            <div className="w-full max-w-[400px] rounded-[14px] bg-[#292A32] p-6">
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4" suppressHydrationWarning>
+            <div className="w-full  rounded-[14px] bg-[#292A32] p-6">
+              <form onSubmit={handleSubmit} className="flex flex-row gap-3 items-center" suppressHydrationWarning>
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
-                  className="w-full rounded-[8px] border border-gray-700 bg-transparent p-3 text-white focus:border-[#B9FF66] focus:outline-none"
+                  className="flex-1 rounded-[8px] border border-gray-700 bg-transparent p-3 text-white focus:border-[#B9FF66] focus:outline-none"
                   required
                   aria-label="Email for newsletter"
                   suppressHydrationWarning
@@ -118,7 +113,7 @@ const Footer = () => {
                 <Button
                   type="submit"
                   variant="secondary"
-                  className="w-full py-3"
+                  className="whitespace-nowrap py-3 px-4"
                   suppressHydrationWarning
                 >
                   Subscribe to news
