@@ -19,57 +19,74 @@ const Footer = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Newsletter subscription logic would go here
     setEmail('');
   };
+
 
   return (
     <footer className={`${colors.bgDark} mx-auto w-full max-w-7xl px-6 py-16 md:px-16 lg:px-20 overflow-hidden`}>
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
-          {/* Logo and Navigation */}
-          <div className="flex flex-col gap-6">
-            <Link href="/" className="flex items-center" aria-label="Positivus Home" tabIndex={0}>
-              <Image src="/logos/Logo.svg" alt="Positivus Logo" width={148} height={24} priority />
-            </Link>
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center" aria-label="Positivus Home" tabIndex={0}>
+            <Image src="/logos/logo_white.svg" alt="Positivus Logo" width={148} height={24} priority />
+          </Link>
 
-            <div className="flex items-center gap-4">
+          {/* Navigation Links */}
+          <div className="flex flex-wrap gap-6 lg:gap-8">
+            {navItems.map((item) => (
               <Link
-                href="https://linkedin.com"
-                target="_blank"
-                className="flex items-center justify-center rounded-full"
-                aria-label="LinkedIn"
+                key={item.href}
+                href={item.href}
+                className={`${typography.p} ${colors.white} transition-colors hover:text-gray-300`}
                 tabIndex={0}
+                aria-label={item.label}
               >
-                <Image src="/logos/Social icon in.svg" alt="LinkedIn" width={24} height={24} />
+                {item.label}
               </Link>
-
-              <Link
-                href="https://facebook.com"
-                target="_blank"
-                className="flex h-6 w-6 items-center justify-center rounded-full bg-white"
-                aria-label="Facebook"
-                tabIndex={0}
-              >
-                <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.5 8.25V5.25C7.5 4.422 8.172 3.75 9 3.75H10.5V0H7.5C5.0145 0 3 2.0145 3 4.5V8.25H0V12H3V24H7.5V12H10.5L12 8.25H7.5Z" fill="#191A23" />
-                </svg>
-              </Link>
-
-              <Link
-                href="https://twitter.com"
-                target="_blank"
-                className="flex h-6 w-6 items-center justify-center rounded-full bg-white"
-                aria-label="Twitter"
-                tabIndex={0}
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01z" fill="#191A23" />
-                </svg>
-              </Link>
-            </div>
+            ))}
           </div>
 
+          {/* Social Media Icons */}
+          <div className="flex items-center gap-4">
+            <Link
+              href="https://linkedin.com"
+              target="_blank"
+              className="flex items-center justify-center rounded-full"
+              aria-label="LinkedIn"
+              tabIndex={0}
+            >
+              <Image src="/logos/Social icon in.svg" alt="LinkedIn" width={24} height={24} />
+            </Link>
+
+            <Link
+              href="https://facebook.com"
+              target="_blank"
+              className="flex h-6 w-6 items-center justify-center rounded-full bg-white"
+              aria-label="Facebook"
+              tabIndex={0}
+            >
+              <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 8.25V5.25C7.5 4.422 8.172 3.75 9 3.75H10.5V0H7.5C5.0145 0 3 2.0145 3 4.5V8.25H0V12H3V24H7.5V12H10.5L12 8.25H7.5Z" fill="#191A23" />
+              </svg>
+            </Link>
+
+            <Link
+              href="https://twitter.com"
+              target="_blank"
+              className="flex h-6 w-6 items-center justify-center rounded-full bg-white"
+              aria-label="Twitter"
+              tabIndex={0}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01z" fill="#191A23" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+
+        {/* Middle Section: Contact Info and Newsletter */}
+        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Contact Information */}
           <div className="flex flex-col gap-4">
             <div className="mb-2 inline-block rounded-full bg-[#B9FF66] px-4 py-1">
@@ -85,7 +102,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Form */}
-          <div className="flex flex-col gap-6 lg:items-end">
+          <div className="flex flex-col items-end">
             <div className="w-full max-w-[400px] rounded-[14px] bg-[#292A32] p-6">
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <input
@@ -109,27 +126,15 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Navigation */}
-        <div className="mt-8 flex flex-wrap items-center gap-6 border-t border-gray-700 pt-6 lg:gap-8">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`${typography.p} ${colors.white} transition-colors hover:text-gray-300`}
-              tabIndex={0}
-              aria-label={item.label}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
+        {/* Separator Line */}
+        <div className="my-8 border-t border-gray-700"></div>
 
-        {/* Copyright */}
-        <div className="mt-8 flex flex-col justify-between border-t border-gray-700 pt-6 text-white md:flex-row md:items-center">
+        {/* Bottom: Copyright and Privacy Policy */}
+        <div className="flex flex-col justify-between text-white sm:flex-row sm:items-center">
           <p className={`${typography.p} text-gray-400`}>© 2023 Positivus. All Rights Reserved.</p>
           <Link
             href="/privacy-policy"
-            className={`${typography.p} mt-4 text-gray-400 transition-colors hover:text-white md:mt-0`}
+            className={`${typography.p} mt-4 text-gray-400 transition-colors hover:text-white sm:mt-0`}
             tabIndex={0}
             aria-label="Privacy Policy"
           >
@@ -141,4 +146,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;
