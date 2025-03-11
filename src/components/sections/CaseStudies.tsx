@@ -1,37 +1,11 @@
 'use client';
 
+import { caseStudies } from '@/data/caseStudiesData';
 import { typography } from '@/styles/typography';
 import Image from 'next/image';
 import SectionTitle from '../ui/SectionTitle';
 
-type CaseStudyProps = {
-  title: string;
-  description: string;
-  learnMoreHref: string;
-};
-
 const CaseStudies = () => {
-  const caseStudies: CaseStudyProps[] = [
-    {
-      title: '',
-      description:
-        'For a local restaurant we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.',
-      learnMoreHref: '#restaurant-case',
-    },
-    {
-      title: '',
-      description:
-        'For a B2B software company we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.',
-      learnMoreHref: '#software-case',
-    },
-    {
-      title: '',
-      description:
-        'For a national retail chain we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.',
-      learnMoreHref: '#retail-case',
-    },
-  ];
-
   const handleLearnMoreClick = (href: string) => {
     console.log(`Navigate to: ${href}`);
   };
@@ -57,16 +31,13 @@ const CaseStudies = () => {
                     {caseStudy.description}
                   </div>
                   <button
-                    className="group flex items-center text-[#B9FF66] cursor-pointer"
+                    className="text-white hover:underline flex items-center gap-2"
                     onClick={() => handleLearnMoreClick(caseStudy.learnMoreHref)}
-                    onKeyDown={(e) =>
-                      e.key === 'Enter' && handleLearnMoreClick(caseStudy.learnMoreHref)
-                    }
+                    aria-label={`Learn more about ${caseStudy.description.substring(0, 30)}...`}
                     tabIndex={0}
-                    aria-label={`Learn more about case study for ${caseStudy.title}`}
                   >
-                    <span className={`mr-2 ${typography.pLarge}`}>Learn more</span>
-                    <div className="flex h-6 w-6 items-center justify-center">
+                    <span className={`mr-2 ${typography.pLarge} cursor-pointer`}>Learn more</span>
+                    <div className="flex h-6 w-6 items-center justify-center cursor-pointer">
                       <Image
                         src="/Icon (2).svg"
                         alt="Arrow icon"
