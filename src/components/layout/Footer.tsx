@@ -104,7 +104,7 @@ const Footer = () => {
           {/* Newsletter Form */}
           <div className="flex flex-col items-end">
             <div className="w-full max-w-[400px] rounded-[14px] bg-[#292A32] p-6">
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4" suppressHydrationWarning>
                 <input
                   type="email"
                   value={email}
@@ -113,11 +113,13 @@ const Footer = () => {
                   className="w-full rounded-[8px] border border-gray-700 bg-transparent p-3 text-white focus:border-[#B9FF66] focus:outline-none"
                   required
                   aria-label="Email for newsletter"
+                  suppressHydrationWarning
                 />
                 <Button
                   type="submit"
                   variant="secondary"
                   className="w-full py-3"
+                  suppressHydrationWarning
                 >
                   Subscribe to news
                 </Button>

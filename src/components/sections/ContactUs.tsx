@@ -74,7 +74,7 @@ const ContactUs = () => {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} suppressHydrationWarning>
               <div className="flex flex-col gap-6">
                 {/* Name Field */}
                 <div className="flex flex-col gap-2">
@@ -89,6 +89,7 @@ const ContactUs = () => {
                     className="w-full p-4 rounded-[14px] border border-black bg-white focus:outline-none focus:ring-1 focus:ring-gray-800"
                     value={formData.name}
                     onChange={handleInputChange}
+                    suppressHydrationWarning
                   />
                 </div>
 
@@ -106,6 +107,7 @@ const ContactUs = () => {
                     className="w-full p-4 rounded-[14px] border border-black bg-white focus:outline-none focus:ring-1 focus:ring-gray-800"
                     value={formData.email}
                     onChange={handleInputChange}
+                    suppressHydrationWarning
                   />
                 </div>
 
@@ -123,11 +125,12 @@ const ContactUs = () => {
                     className="w-full p-4 rounded-[14px] border border-black bg-white focus:outline-none focus:ring-1 focus:ring-gray-800 resize-none"
                     value={formData.message}
                     onChange={handleInputChange}
+                    suppressHydrationWarning
                   ></textarea>
                 </div>
 
                 {/* Submit Button */}
-                <Button variant="primary" fullWidth className="mt-4">
+                <Button variant="primary" fullWidth className="mt-4" suppressHydrationWarning>
                   Send Message
                 </Button>
               </div>
