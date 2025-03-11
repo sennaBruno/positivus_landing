@@ -3,6 +3,7 @@ import CaseStudies from '@/components/sections/CaseStudies';
 import Hero from '@/components/sections/Hero';
 import Partners from '@/components/sections/Partners';
 import Services from '@/components/sections/Services';
+import WorkingProcess from '@/components/sections/WorkingProcess';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <CallToAction />
       <CaseStudies />
+      <WorkingProcess />
     </div>
   );
 }
