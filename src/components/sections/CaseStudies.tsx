@@ -51,7 +51,7 @@ const CaseStudies = () => {
 
         {/* Case Studies Grid */}
         <div className="rounded-[45px] bg-[#191A23] p-8 md:p-16">
-          <div className="grid grid-cols-1 gap-8 divide-y divide-gray-700 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
+          <div className="grid grid-cols-1  divide-y divide-gray-700 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
             {caseStudies.map((caseStudy, index) => (
               <div key={index} className="py-8 lg:py-6 lg:px-8">
                 <div>
