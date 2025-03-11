@@ -7,16 +7,15 @@ This is a modern, responsive landing page for Positivus Digital Marketing Agency
 - 📱 **Fully Responsive Design** - Perfect on all device sizes
 - 🎨 **Modern UI** - Clean and professional design
 - ⚡ **Performance Optimized** - Fast loading and smooth animations
-- 🔍 **SEO Friendly** - Proper metadata and Open Graph tags
-- ♿ **Accessible** - WCAG compliant with proper aria attributes
-- 🛠️ **Modern Tech Stack** - Built with Next.js 15, React 19 and Tailwind CSS 4
+- ♿ **Accessible** - WCAG compliant design
+- 🛠️ **Modern Tech Stack** - Built with Next.js, React and Tailwind CSS
 
 ## Tech Stack
 
-- [Next.js 15](https://nextjs.org/) - React framework
-- [React 19](https://react.dev/) - JavaScript library
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://react.dev/) - JavaScript library
 - [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
 - [Headless UI](https://headlessui.com/) - Accessible UI components
 
 ## Getting Started
@@ -30,7 +29,7 @@ This is a modern, responsive landing page for Positivus Digital Marketing Agency
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Bruno/positivus-landing.git
+git clone https://github.com/sennaBruno/positivus_landing.git
 cd positivus-landing
 ```
 
@@ -50,30 +49,14 @@ yarn dev
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deployment to Vercel
+## Deployment
 
-The easiest way to deploy this Next.js app is using [Vercel](https://vercel.com/), the platform built by the creators of Next.js.
-
-1. Create a Vercel account at [vercel.com](https://vercel.com/signup)
-2. Install the Vercel CLI:
-```bash
-npm install -g vercel
-```
-
-3. Run the deploy command from the project directory:
-```bash
-vercel
-```
-
-4. Follow the prompts to complete the deployment.
-
-### Alternative Deployment Method (via GitHub)
+The easiest way to deploy this Next.js app is using [Vercel](https://vercel.com/).
 
 1. Push your code to a GitHub repository
 2. Go to [vercel.com](https://vercel.com/) and sign in with GitHub
-3. Click "Import Project" and select your repository
-4. Configure your project (the defaults should work for most cases)
-5. Click "Deploy"
+3. Import your repository and configure your project
+4. Click "Deploy"
 
 ## Project Structure
 
@@ -82,7 +65,6 @@ vercel
   - `/layout` - Layout components (header, footer)
   - `/sections` - Page section components
   - `/ui` - Reusable UI components
-- `/src/styles` - Global styles and typography
 - `/public` - Static assets
 
 ## License
