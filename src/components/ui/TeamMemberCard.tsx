@@ -12,7 +12,7 @@ interface TeamMemberCardProps {
 const TeamMemberCard = ({ name, position, experience, skills, image }: TeamMemberCardProps) => {
   return (
     <div className="flex flex-col rounded-[45px] border border-[#191A23] px-8 py-10 h-full bg-white shadow-[0px_5px_0px_0px_#191A23]">
-      <div className="flex justify-between items-start mb-8">
+      <div className="flex justify-between items-start mb-8 gap-4">
         <div className="relative w-[105px] h-[102px]">
           <Image
             src={image}

@@ -32,8 +32,12 @@ const Team = () => {
         </div>
 
         {/* See All Team Button */}
-        <div className="mt-10 flex justify-center">
-          <Button variant="secondary" size="medium">
+        <div className="flex justify-end mt-4">
+          <Button
+            variant="primary"
+            size="medium"
+            className="px-10 py-4 rounded-full bg-[#191A23] text-white font-normal"
+          >
             See all team
           </Button>
         </div>
