@@ -42,7 +42,7 @@ const TeamMemberCard = ({ name, position, experience, skills, image }: TeamMembe
         </a>
       </div>
 
-      <div className="border-t border-[#F3F3F3]  pt-8">
+      <div className="border-t border-[#DADADA] pt-8">
         <p className={`${typography.p} ${colors.dark} text-[16px]`}>{experience}</p>
         <p className={`${typography.p} ${colors.dark} mt-1 text-[16px]`}>{skills}</p>
       </div>

@@ -22,7 +22,7 @@ export const teamMembers: TeamMember[] = [
     position: 'Director of Operations',
     experience: '7+ years of experience in project management and team leadership.',
     skills: 'Strong organizational and communication skills',
-    image: '/images/team/placeholder.svg',
+    image: '/images/team/Picture Jane Doe.svg',
   },
   {
     id: '3',
@@ -30,7 +30,7 @@ export const teamMembers: TeamMember[] = [
     position: 'Senior SEO Specialist',
     experience: '5+ years of experience in SEO and content creation.',
     skills: 'Proficient in keyword research and on-page optimization',
-    image: '/images/team/placeholder.svg',
+    image: '/images/team/Picture Michael Brown.svg',
   },
   {
     id: '4',
@@ -38,7 +38,7 @@ export const teamMembers: TeamMember[] = [
     position: 'PPC Manager',
     experience: '3+ years of experience in paid search advertising.',
     skills: 'Skilled in campaign management and performance analysis',
-    image: '/images/team/placeholder.svg',
+    image: '/images/team/Picture Emily Johnson.svg',
   },
   {
     id: '5',
@@ -46,7 +46,7 @@ export const teamMembers: TeamMember[] = [
     position: 'Social Media Specialist',
     experience: '4+ years of experience in social media marketing.',
     skills: 'Proficient in creating and scheduling content, analyzing metrics, and building engagement',
-    image: '/images/team/placeholder.svg',
+    image: '/images/team/Picture Brian Williams.svg',
   },
   {
     id: '6',
@@ -54,6 +54,6 @@ export const teamMembers: TeamMember[] = [
     position: 'Content Creator',
     experience: '2+ years of experience in writing and editing',
     skills: 'Skilled in creating compelling, SEO-optimized content for various industries',
-    image: '/images/team/placeholder.svg',
+    image: '/images/team/Picture Sarah Kim.svg',
   },
 ]; 
