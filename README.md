@@ -58,6 +58,11 @@ The easiest way to deploy this Next.js app is using [Vercel](https://vercel.com/
 3. Import your repository and configure your project
 4. Click "Deploy"
 
+### Live Demo
+
+The project is deployed and available at:
+[https://positivus-landing-18pn41z59-zanaliksls-projects.vercel.app/](https://positivus-landing-18pn41z59-zanaliksls-projects.vercel.app/)
+
 ## Project Structure
 
 - `/src/app` - Next.js App Router pages and layouts
