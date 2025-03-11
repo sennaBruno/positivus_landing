@@ -27,7 +27,7 @@ const TestimonialCard = ({ testimonial, className = '', active = false }: Testim
         <div className="absolute inset-0 flex p-8 md:p-12">
           <div className="flex-grow">
             <p className="text-white text-sm md:text-base leading-relaxed">
-              "{testimonial.content}"
+              &ldquo;{testimonial.content}&rdquo;
             </p>
           </div>
 

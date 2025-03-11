@@ -5,11 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     domains: [],
   },
-  // Adding this to help with hydration issues
-  experimental: {
-    // This improves hydration errors detection
-    strictNextHead: true,
-  },
 };
 
 export default nextConfig;

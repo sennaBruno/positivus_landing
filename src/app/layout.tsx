@@ -13,10 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: 'Positivus - Digital Marketing Agency',
-  description: 'Helping businesses grow and succeed online with our digital marketing services',
-  other: {
-    'darkreader-lock': 'true',
-  },
+  description: 'Digital marketing services to help your business grow online',
 };
 
 export default function RootLayout({

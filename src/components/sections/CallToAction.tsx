@@ -14,7 +14,7 @@ const CallToAction = () => {
 			<div className="relative mx-auto max-w-7xl">
 				<div className="relative flex flex-col items-center justify-between rounded-[45px] bg-[#F5F5F5] px-8 py-16 md:px-16 lg:flex-row lg:items-start lg:px-[60px]">
 					<div className="z-10 max-w-lg">
-						<h2 className={`${typography.h2} mb-4 font-medium`}>Let's make things happen</h2>
+						<h2 className={`${typography.h2} mb-4 font-medium`}>Let&apos;s make things happen</h2>
 						<p className={`${typography.pLarge} ${colors.dark} mb-8`}>
 							Contact us today to learn more about how our digital marketing services can help your
 							business grow and succeed online.
@@ -24,7 +24,6 @@ const CallToAction = () => {
 							size="medium"
 							aria-label="Get your free proposal"
 							onClick={handleProposalClick}
-							onKeyDown={(e) => e.key === 'Enter' && handleProposalClick()}
 						>
 							Get your free proposal
 						</Button>

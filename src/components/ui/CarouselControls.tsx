@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React from 'react';
 
 interface CarouselControlsProps {
@@ -41,11 +42,14 @@ const CarouselControls: React.FC<CarouselControlsProps> = ({
             className="w-6 h-6 flex items-center justify-center transition-colors cursor-pointer"
             tabIndex={0}
           >
-            <img
-              src={index === activeSlide ? '/star-active.svg' : '/star-inactive.svg'}
-              alt={index === activeSlide ? "Active item" : "Inactive item"}
-              className="w-[14px] h-[14px]"
-            />
+            <div className="relative w-[14px] h-[14px]">
+              <Image
+                src={index === activeSlide ? '/star-active.svg' : '/star-inactive.svg'}
+                alt={index === activeSlide ? "Active item" : "Inactive item"}
+                width={14}
+                height={14}
+              />
+            </div>
           </button>
         ))}
       </div>

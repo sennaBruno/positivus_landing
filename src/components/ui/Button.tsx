@@ -13,7 +13,6 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
-  suppressHydrationWarning?: boolean;
 }
 
 const Button = ({
@@ -26,6 +25,7 @@ const Button = ({
   leftIcon,
   rightIcon,
   className = '',
+  suppressHydrationWarning = true,
   ...props
 }: ButtonProps) => {
   const baseStyles =
@@ -53,7 +53,7 @@ const Button = ({
       type={props.type || 'button'}
       tabIndex={props.tabIndex || 0}
       aria-label={props['aria-label'] || (typeof children === 'string' ? children : undefined)}
-      suppressHydrationWarning={props.suppressHydrationWarning}
+      suppressHydrationWarning={suppressHydrationWarning}
       {...props}
     >
       {leftIcon && <span className="mr-2">{leftIcon}</span>}
